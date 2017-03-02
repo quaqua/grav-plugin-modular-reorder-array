@@ -8,10 +8,12 @@ The current grav-admin interface (state: early 2017) has no option to reorder mo
 
 There seems to be a bug in the grav-admin php `$_POST`->php-object processor which just changes the order of the indexed array and turns it into an associated array with correct position of the array elements, but wrong key indices. If you are interested in details, I recommend to observe the behavior of the resulting frontmatter header with this plugin disabled.
 
-**WHAT DOES THIS PLUGIN?**
+**WHAT DOES THIS PLUGIN DO?**
+
 The plugin subscribes to an event right after the initialization of the grav admin toolchain controller and searches exactly for `header.content.order.custom`. If found, it tidies up the wrong index-keys, respecting the position of the strings within the array. That's it.
 
 **PLEASE NOTE**
+
 PHP is not my main subject as a programmer, nor am I very experienced with Grav. This solution should be considered as temporary as in my opinion it should be a patch for the grav-admin. I didn't make it a patch, as it seems quite tricky to make work in general for all blueprint indexed arrays (without keys).
 
 ## Installation
