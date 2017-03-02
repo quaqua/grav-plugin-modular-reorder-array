@@ -1,0 +1,31 @@
+name: Modular Reorder Array
+version: 0.1.0
+description: Reorders the blueprint definition for modular custom order by making match the array order with the array index keys
+icon: plug
+author:
+  name: quaqua
+  email: quaqua@tastenwerk.com
+homepage: https://github.com/574100/grav-plugin-modular-reorder-array
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/574100/grav-plugin-modular-reorder-array/issues
+docs: https://github.com/574100/grav-plugin-modular-reorder-array/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
