@@ -51,7 +51,7 @@ enabled: true
 ## Usage
 
 In your modular pages container blueprint, let's call it `themes/<yourtheme>/blueprints/team.yaml`, add a form field for the custom order:
-```
+```yaml
 title: Team
 '@extends':
     type: default
