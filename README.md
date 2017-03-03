@@ -1,6 +1,6 @@
 # Modular Reorder Array Plugin
 
-The **Modular Reorder Array** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It reorders the blueprint definition for modular custom order by making match the array order with the array index keys
+The **Modular Reorder Array** Plugin is for [Grav CMS](http://github.com/getgrav/grav). It reorders the blueprint definition for modular custom order by matching the actual array order with the array index keys.
 
 The current grav-admin interface (state: early 2017) has no option to reorder modular childpages from within their parent page. Grav has a very cool and smart way to extend and modify existing functionalities through it's extensible blueprint system. By adding a `header.content.order.custom` form field in the template's blueprint, one can almost add this missing behavior.
 
